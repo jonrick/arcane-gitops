@@ -4,7 +4,7 @@ services:
       container_name: dumbwhois
       restart: unless-stopped
       ports:
-      - ${DUMBWHOIS_PORT:-9999}:3000
+      - ${DUMBWHOIS_PORT:-9009}:3000
       environment:
       - SITE_TITLE=${DUMBWHOIS_SITE_TITLE:-DumbWhois}
       # (Optional) Restrict origins - ex: https://subdomain.domain.tld,https://auth.proxy.tld,http://internalip:port' (empty/default is '*')
